@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Poppins:ital,wght@0,400;0,700;1,400;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+<link rel="stylesheet" href="style.css">
+<!-- attribute this github repo https://github.com/jonsuh/hamburgers -->
+<link rel="stylesheet" href="hamburger.css">
+</head>
+<body class="grid col-3 row-3" >
+<header class="header ">
+  <div class="logo">
+    <img src="./assets/images/logo.svg" alt="W. Logo">
+  </div>
+  <button class=" hamburger" type="button">
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+  </button>
+  <nav class="hidden">
+  Home
+  New
+  Popular
+  Trending
+  Categories
+  </nav>
+</header>
+<main class="container">
+<section class="section1 ">
+  <div class="section1-image-container my">
+    <picture>
+      <source src="./assets/images/image-web-3-desktop.jpg" type="image/jpg" media="(min-width: 600px)">
+      <img src="./assets/images/image-web-3-mobile.jpg" alt="colorful background image of geometric shapes and pegs fitting into holes like the kids toy">
+    </picture>
+  </div>
+  
+ <article>
+  <h1 class="text-accent-darkblue text-lg bold ">
+    The Bright Future of Web 3.0?
+  </h1>
+
+<div class="my">
+  <p class="mb text-accent-gray  type-fix semi-bold">
+    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+    But is it really fulfilling its promise?
+  
+  </p>
+    <button class="section1__button bg-accent-red text-accent-white semi-bold text-md my">
+      READ MORE
+    </button>
+</div>
+ </article>
+
+</section>
+ <section class=" section2 text-accent-white bg-accent-darkblue section-seperator">
+ <h2 class="text-accent-orange text-lg bold mb"> New </h2>
+
+<article class="my type-fix">
+  <h3 class="text-md">Hydrogen VS Electric Cars</h3>
+<p >  Will hydrogen-fueled cars ever catch up to EVs?</p>
+</article>
+
+<article class="my py border-y type-fix">
+  <h3 class="text-md">The Downsides of AI Artistry</h3>
+ <p> What are the possible adverse effects of on-demand AI image generation?</p>
+</article>
+
+ <article class="type-fix">
+  <h3 class="text-md">
+    Is VC Funding Drying Up?
+  </h3>
+<p >  Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+ </article>
+
+ </section>
+ <section class="section3 flex flex-col gap-50">
+<article class="flex gap-25 ">
+<img src="/assets/images/image-retro-pcs.jpg" alt="a retro PC desktop computer" >
+  <div class="section3__content flex flex-col ">
+    <span class="text-accent-gray semi-bold">01</span>
+  <h3 class="text-md bold">Reviving Retro PCs</h3>
+ <p class="text-accent-gray  type-fix semi-bold">
+  What happens when old PCs are given modern upgrades?
+ </p>
+  </div>
+</article>
+
+<article class="flex gap-25">
+<img src="/assets/images/image-top-laptops.jpg" alt="image of the top of a keyboard that has a red backlight" >
+<div class="section3__content flex flex-col ">
+  <span class="text-accent-gray semi-bold">02</span>
+  <h3 class="text-md bold">Top 10 Laptops of 2022</h3>
+  <p class="text-accent-gray  type-fix semi-bold">
+    Our best picks for various needs and budgets.
+  </p>
+</div>
+</article>
+
+ <article class="flex gap-25 ">
+  <img src="/assets/images/image-gaming-growth.jpg" alt="a hand tossing and playstation controller in the air" >
+ <div class="section3__content flex flex-col ">
+  <span class="text-accent-gray semi-bold">03</span>
+  <h3 class="text-md bold"> The Growth of Gaming</h3>
+ <p class="text-accent-gray  type-fix semi-bold">
+   How the pandemic has sparked fresh opportunities.
+ </p>
+ </div>
+ </article>
+ </section>
+  
+</main>
+
+ 
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
