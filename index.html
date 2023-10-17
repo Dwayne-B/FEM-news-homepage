@@ -12,38 +12,50 @@
   <title>Frontend Mentor | News homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+
 <!-- attribute this github repo https://github.com/jonsuh/hamburgers -->
 <link rel="stylesheet" href="hamburger.css">
 </head>
-<body class="grid col-3 row-3" >
+<body class="" >
 <header class="header ">
   <div class="logo">
     <img src="./assets/images/logo.svg" alt="W. Logo">
   </div>
-  <button class=" hamburger" type="button">
+  <button class=" hamburger hamburger--collapse" type="button"  data-open="false">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
-  <nav class="hidden">
-  Home
-  New
-  Popular
-  Trending
-  Categories
+  <nav class="">
+<ul class=" nav-links-container flex">
+  <li>  <a href="#home">Home</a>
+</li>
+<li>    <a href="new">New</a>
+  </li>
+<li>  <a href="popular">Popular</a>
+  </li>
+  <li><a href="trending">Trending</a>
+</li>
+<li>
+  <a href="categories">Categories</a>
+</li>
+</ul>
   </nav>
 </header>
 <main class="container">
 <section class="section1 ">
   <div class="section1-image-container my">
     <picture>
-      <source src="./assets/images/image-web-3-desktop.jpg" type="image/jpg" media="(min-width: 600px)">
-      <img src="./assets/images/image-web-3-mobile.jpg" alt="colorful background image of geometric shapes and pegs fitting into holes like the kids toy">
+      <source srcset="./assets/images/image-web-3-desktop.jpg" type="image/jpeg" media="(min-width:768px)" width="50" height="50" >
+      <img  src="./assets/images/image-web-3-mobile.jpg" alt="colorful background image of geometric shapes and pegs fitting into holes like the kids toy" >
     </picture>
+
+
+ 
   </div>
   
- <article>
+ <article class="section1-article">
   <h1 class="text-accent-darkblue text-lg bold ">
     The Bright Future of Web 3.0?
   </h1>
@@ -74,7 +86,7 @@
  <p> What are the possible adverse effects of on-demand AI image generation?</p>
 </article>
 
- <article class="type-fix">
+ <article class=" type-fix">
   <h3 class="text-md">
     Is VC Funding Drying Up?
   </h3>
@@ -124,5 +136,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./app.js"></script>
 </body>
 </html>
